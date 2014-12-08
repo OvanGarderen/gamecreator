@@ -354,7 +354,7 @@ class LevelEditor:
 
     def load_resources(self):
         import os,glob
-        gameroot = "/home/okke/projects/gamecreator/games/pikkenzuiger"
+        gameroot = "/home/okke/projects/gamecreator/games/sample_game"
 
         path = os.path.join(gameroot,"objects","*.object")
         obj_files = glob.glob(path)
@@ -481,7 +481,7 @@ class Object(Resource):
         self.load()
         self.w, self.h = 0,0
         if 'sprite' in self.config:
-            self.spritefile = Sprite('/home/okke/projects/gamecreator/games/pikkenzuiger/sprites/' + self.sprite + '.sprite')
+            self.spritefile = Sprite('/home/okke/projects/gamecreator/games/sample_game/sprites/' + self.sprite + '.sprite')
             parimage = gtk.gdk.pixbuf_new_from_file(self.spritefile.image)
             w,h = self.spritefile.framesize()
             self.w, self.h = w,h
@@ -500,5 +500,5 @@ class Object(Resource):
 gobject.type_register(LevelInfo)
 gobject.type_register(ObjectInfo)
 gobject.type_register(LevelPreview)
-led = LevelEditor('games/pikkenzuiger/levels/eerste.level')
+led = LevelEditor('games/sample_game/levels/eerste.level')
 gtk.main()

@@ -3,7 +3,8 @@
 
 Type _TypeRect = {"rect",NULL,NULL,
 		      type_rect_print,
-		      type_rect_resolve};
+		  type_rect_resolve,
+		  NULL};
 Type * TypeRect = &_TypeRect;
 
 void type_rect_print(Value * v) {

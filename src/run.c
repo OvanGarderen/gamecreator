@@ -86,7 +86,7 @@ int main(int argc, char *argv[]) {
   Value_unref(eval(v,global));
   
   // init resources
-#define gameroot "games/pikkenzuiger/"
+#define gameroot "games/sample_game/"
 
   resources = resourcelist_init();
 

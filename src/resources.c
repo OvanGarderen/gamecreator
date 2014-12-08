@@ -102,8 +102,12 @@ Resource resource_new_image(char * file){
   Image * r = calloc(sizeof(Image),1);
   r->type = RESIMAGE;
   r->data = al_load_bitmap(file);
-  r->w = al_get_bitmap_width(((Image*) r)->data);
-  r->h = al_get_bitmap_height(((Image*) r)->data);
+  if(!r->data){
+    free(r);
+    return NULL;
+  }
+  r->w = al_get_bitmap_width(r->data);
+  r->h = al_get_bitmap_height(r->data);
   return r;
 }
 
@@ -117,6 +121,9 @@ Resource resource_new_sprite(char * name, Image * image,
                              int framewidth, int frameheight,
                              int animdelay) {
   // don't put in zero framewidth
+  if(!image)
+    return NULL;
+  
   Sprite *r = calloc(sizeof(Sprite),1);
   r->type = RESSPRITE;
   r->name = strclone(name);
@@ -198,7 +205,7 @@ void resource_kill_object(Resource r) {
 }
 
 Script * loadscript(char * methods, char * name, Scope * global) {
-  char *fullpath = g_build_filename("games/pikkenzuiger/objects",
+  char *fullpath = g_build_filename("games/sample_game/objects",
                               methods,name,NULL);
   Script * s = resource_new_script(fullpath,global);
   free(fullpath);
@@ -357,6 +364,8 @@ Resource resourcelist_load_image(Resourcelist *rlist, char * file){
 
 Resource resourcelist_load_sprite(Resourcelist *rlist, char * file){
   Sprite * spr = resource_load_sprite(file);
+  if(!spr)
+    return NULL;
   char * fullname = strappend(strclone(spr->name),".sprite");
   resourcelist_add(rlist,fullname,spr);
   free(fullname);
