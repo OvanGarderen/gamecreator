@@ -1,0 +1,8 @@
+level : {
+	name : "<unnamed level>"
+	order : 0
+	width : 480
+	height : 360
+	instances : ()
+	backgroundcol : (0, 0, 0)
+}

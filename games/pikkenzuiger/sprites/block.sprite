@@ -1,0 +1,7 @@
+sprite : {
+    name = "block"
+    image = "games/pikkenzuiger/sprites/block.jpg"
+    framewidth = 48
+    frameheight = -1
+    animdelay = 5
+}

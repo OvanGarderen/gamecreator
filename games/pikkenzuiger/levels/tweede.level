@@ -1,0 +1,12 @@
+level : {
+	name : "aw yiss mothafucking sequel"
+	instances : (
+		("kek", 250.0, 102.0),
+		("kek", 40.0, 202.0),
+		("kek", 179.0, 248.0)
+	)
+	height : 360
+	width : 480
+	order : 2
+	backgroundcol : (10, 100, 10)
+}

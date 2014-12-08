@@ -1,0 +1,6 @@
+(== libbooleans equalhandler (a b) (:any :any) 0)
+(> libbooleans gthandler (a b) (:any :any) 0)
+
+(and libbooleans andhandler (a b) (:int :int) 0)
+(or libbooleans orhandler (a b) (:int :int) 0)
+(not libbooleans nothandler (a) (:int) 0)

@@ -1,0 +1,5 @@
+(+ libarithmatic addhandler (a b) (:int :int) 0)
+(- libarithmatic subhandler (a b) (:int :int) 0)
+(* libarithmatic multhandler (a b) (:int :int) 0)
+(/ libarithmatic divhandler (a b) (:int :int) 0)
+(% libarithmatic modhandler (a b) (:int :int) 0)

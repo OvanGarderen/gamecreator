@@ -1,0 +1,16 @@
+level : {
+	name : "aw yiss"
+	instances : (
+		("kek", 49.0, 123.0),
+		("block", 295.0, 311.0),
+		("block", 133.0, 353.0),
+		("block", 402.0, 250.0),
+		("block", 319.0, 200.0),
+		("block", 100.0, 251.0),
+		("block", 17.0, 187.0)
+	)
+	height : 360
+	width : 480
+	order : 1
+	backgroundcol : (10, 100, 10)
+}

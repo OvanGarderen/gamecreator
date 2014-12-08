@@ -1,0 +1,4 @@
+(__init libkeyboard __inithandler () () 0)
+(check libkeyboard checkhandler (keycode) (:int) 0)
+(up libkeyboard checkuphandler (keycode) (:int) 0)
+(press libkeyboard checkpresshandler (keycode) (:int) 0)

@@ -1,0 +1,19 @@
+(return libtools returnhandler (value) (:any) 0)
+(catch  libtools catchhandler 
+	(error @AS ename @IN body @FAIL alt) 
+	(:any :any :symbol :any :any :any :any) 1)
+(delete libtools deletehandler (name) (:symbol) 1)
+
+(typeof libtools typeofhandler (val) (:any) 0)
+(type libtools typehandler (name body) (:symbol :list) 1)
+(pack libtools typepackhandler (type @body) (:type) 0)
+(get libtools typegethandler (value index) (:any :integer) 0)
+
+(suspend libtools suspendhandler (value) (:integer) 0)
+(suspend-wrap libtools suspendwraphandler (ptr) (:pointer) 0)
+
+(ptr-cast-ptr libtools ptphandler (ptr) (:pointer) 0)
+(ptr-cast-int libtools ptihandler (ptr) (:pointer) 0)
+(ptr-cast-float libtools ptfhandler (ptr) (:pointer) 0)
+(ptr-cast-char libtools ptchandler (ptr) (:pointer) 0)
+(ptr-cast-string libtools ptshandler (ptr) (:pointer) 0)

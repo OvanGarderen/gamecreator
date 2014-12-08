@@ -1,0 +1,6 @@
+sprite : {
+animdelay : 5
+image : "/home/okke/projects/gamecreator/games/pikkenzuiger/sprites/sadfaec_long.jpg"
+frameheight : -1
+name : "kek"
+framewidth : 48}

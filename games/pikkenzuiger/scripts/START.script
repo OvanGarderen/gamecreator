@@ -1,0 +1,6 @@
+function hello ()
+	 print("Lua initialised");
+	 return 0;
+end
+
+hello()

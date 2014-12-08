@@ -1,0 +1,6 @@
+(list   liblists listhandler (@args) () 0)
+(concat liblists concathandler (la lb) (:list :list) 0)
+(head   liblists headhandler (list) (:list) 0)
+(butt   liblists butthandler (list) (:list) 0)
+(tail   liblists tailhandler (list) (:list) 0)
+(empty  liblists emptyhandler (list) (:list) 0)

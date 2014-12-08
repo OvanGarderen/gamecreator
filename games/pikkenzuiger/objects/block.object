@@ -1,0 +1,4 @@
+object : {
+    name = "block"
+    sprite = "block"
+}

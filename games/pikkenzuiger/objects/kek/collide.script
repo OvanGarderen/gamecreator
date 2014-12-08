@@ -1,0 +1,19 @@
+if self.y + 48 > other.y and self.y + 43 < other.y then
+   self.y = self.y - collision.h
+   self.vy = 0
+   self.grounded = 1
+else
+   if self.y < other.y + 48 and self.y > other.y + 43 then
+      self.y = self.y + collision.h
+      self.vy = 0
+   elseif self.x + 40 < other.x then
+      self.x = self.x - collision.w - 1
+      self.vx = 0
+      self.grounded = 0
+   elseif self.x > other.x + 40 then
+      self.x = self.x + collision.w + 1
+      self.vx = 0
+      self.grounded = 0
+   end
+end
+

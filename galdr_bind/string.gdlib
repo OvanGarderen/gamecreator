@@ -1,0 +1,4 @@
+(strcat libstring strcathandler (a b) (:string :string) 0)
+(strget libstring strgethandler (index str) (:integer :string) 0)
+(string2list libstring strtolisthandler (ls) (:string) 0)
+(list2string libstring listtostringhandler (ls) (:list) 0)

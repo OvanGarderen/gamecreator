@@ -1,0 +1,7 @@
+(print libio printhandler (@args) (:any) 0)
+(input libio inputhandler (prompt) (:string) 0)
+
+(fopen libio fileopenhandler (name mode) (:string :string) 0)
+(getc libio getchandler (file) (:file) 0)
+(feof libio fileiseofhandler (file) (:file) 0)
+(getline libio getlinehandler (file) (:file) 0)

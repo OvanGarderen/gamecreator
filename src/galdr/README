@@ -1,0 +1,6 @@
+There is some philosophy behind the coding practices of `galdr'.
+Note the following:
+
+If a function has a primary argument and has no other return type it will return its
+primary argument to allow for method chaining.
+   

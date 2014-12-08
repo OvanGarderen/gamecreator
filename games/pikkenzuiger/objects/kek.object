@@ -1,0 +1,5 @@
+object : {
+    name = "kek"
+    sprite = "kek"
+    methods = "kek"
+}

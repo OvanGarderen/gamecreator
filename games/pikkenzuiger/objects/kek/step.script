@@ -1,0 +1,9 @@
+(if (keyboard.check key-right)
+    then
+  (set self.x (+ self.x 10.0))
+  else
+  (if (keyboard.check key-left)
+      then
+    (set self.x (+ self.x -10.0))
+    else NIL
+    ))
